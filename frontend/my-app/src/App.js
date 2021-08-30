@@ -8,7 +8,6 @@ function Welcome(props) {
 function App() {
   return (
     <div>
-      <mainPage/>
       <Welcome name="Shaun" />
     </div>
   );
