@@ -1,0 +1,82 @@
+@media screen and (min-width: 0px) and (max-width: 1943px) {
+	.header {
+		font-size: calc((1.1 - 1) * 1.2vh + 1rem);
+	}
+	.shaun {
+		font-size: calc((2.2 - 1) * 1.2vh + 1rem);
+	}
+	.contact {
+		font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+	}
+}
+@media screen and (min-width: 1944px) {
+	.header {
+		font-size: calc(1.1 * 1rem);
+	}
+	.shaun {
+		font-size: calc(2.2 * 1rem);
+	}
+	.contact {
+		font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+	}
+}
+.header {
+	width: -moz-calc(100% - 10px);
+	width: -o-calc(100% - 10px);
+	width: -webkit-calc(100% - 4vw);
+	position: fixed;
+	display: flex;
+	font-family: "kepler-std";
+	background-color: #faf9f6;
+	padding: 4vw 0 4vw 0;
+	max-width: 1943px;
+	margin: auto;
+	z-index: 1;
+}
+
+nav {
+	width: inherit;
+	max-width: 1943px;
+	display: flex;
+	letter-spacing: 0em;
+	justify-content: space-between;
+}
+
+.shaun {
+	color: #38383b;
+	display: flex;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menuParent {
+	display: flex;
+	width: 25vw;
+	min-width: 150px;
+	max-width: 200px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navLink:link,
+:visited {
+	color: #38383b;
+	display: flex;
+	text-decoration: none;
+}
+
+.resumeButton {
+	padding: 5px 18px;
+	background-color: #38383b;
+	color: #faf9f6;
+	border-radius: 18px;
+	max-height: 30px;
+}
+
+.contact {
+	font-weight: bold;
+}
+
+.flex {
+	display: flex;
+}

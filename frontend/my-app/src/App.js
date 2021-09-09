@@ -1,16 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
+import "./App.css";
+import Homepage from "./pages/Homepage";
+import MainNavigation from "./components/nav/MainNavigation";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  return (
-    <div>
-      <Welcome name="Shaun" />
-    </div>
-  );
+	return (
+		<div>
+			<main className="main">
+				<MainNavigation />
+				<Switch>
+					<Route exact path="/">
+						<Homepage />
+					</Route>
+				</Switch>
+				<Footer />
+			</main>
+		</div>
+	);
 }
 
 export default App;

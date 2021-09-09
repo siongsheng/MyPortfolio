@@ -1,0 +1,42 @@
+@media screen and (min-width: 0px) and (max-width: 1943px) {
+	.footerMainText {
+		font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+	}
+}
+@media screen and (min-width: 1944px) {
+	.footerMainText {
+		font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+	}
+}
+
+.footerContainer {
+	min-height: 40vh;
+	background-color: #38383b;
+	margin-right: -4vw;
+	margin-left: -4vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: #faf9f6;
+	padding: 8vh 40vw 4vh 4vw;
+	font-weight: lighter;
+}
+
+.footerMainSubText {
+	font-size: 19px;
+	font-weight: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 180px;
+}
+
+.footerIcons {
+	color: #faf9f6;
+	display: flex;
+	margin-right: 2vw;
+}
+
+.footerMainTextLink {
+	color: grey;
+}

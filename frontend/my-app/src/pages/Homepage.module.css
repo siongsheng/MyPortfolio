@@ -1,0 +1,77 @@
+.shortDescriptionContainer {
+	position: relative;
+	height: 100vh;
+}
+
+.shortDescription {
+	font-family: "kepler-std";
+	padding-right: 23vw;
+	font-style: normal;
+	line-height: 1.3;
+	top: 50%;
+	position: absolute;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@media screen and (min-width: 0px) and (max-width: 1943px) {
+	.shortDescription {
+		font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+	}
+	.sectionDetail {
+		font-size: calc((2 - 1) * 1.2vw + 1rem);
+	}
+	.sectionTitle {
+		font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+	}
+	.sectionDetailItemText {
+		font-size: calc(1.4 * 1rem);
+	}
+}
+@media screen and (min-width: 1944px) {
+	.shortDescription {
+		font-size: calc(2.8 * 1rem);
+	}
+	.sectionDetail {
+		font-size: calc(2 * 1rem);
+	}
+	.sectionTitle {
+		font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+	}
+	.sectionDetailItemText {
+		font-size: calc(1.4 * 1rem);
+	}
+}
+
+.sectionContainer {
+	margin-top: 10vh;
+	display: flex;
+}
+
+.sectionTitle {
+	width: 30%;
+	height: auto;
+	display: flex;
+	font-style: italic;
+	flex-direction: column;
+}
+
+.sectionTitle hr {
+	width: 30%;
+	margin: 30px 0px 0px 0px;
+}
+
+.sectionDetail {
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.sectionDetailItem {
+	margin-bottom: 100px;
+	line-height: 0.5;
+}
+
+.sectionDetailItemText {
+	margin-top: 30px;
+}
