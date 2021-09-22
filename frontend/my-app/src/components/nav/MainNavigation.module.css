@@ -1,12 +1,12 @@
 @media screen and (min-width: 0px) and (max-width: 1943px) {
 	.header {
-		font-size: calc((1.1 - 1) * 1.2vh + 1rem);
+		font-size: calc((1.1 - 1) * 1.2vw + 1rem);
 	}
 	.shaun {
-		font-size: calc((2.2 - 1) * 1.2vh + 1rem);
+		font-size: calc((1.5vw) + 1rem);
 	}
-	.contact {
-		font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+	.contactFont {
+		font-size: calc((0.6vw) + 1rem);
 	}
 }
 @media screen and (min-width: 1944px) {
@@ -16,22 +16,22 @@
 	.shaun {
 		font-size: calc(2.2 * 1rem);
 	}
-	.contact {
-		font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+	.contactFont {
+		font-size: calc((0.2vw) + 1.3rem);
 	}
 }
 .header {
-	width: -moz-calc(100% - 10px);
-	width: -o-calc(100% - 10px);
-	width: -webkit-calc(100% - 4vw);
+	width: 100%;
 	position: fixed;
 	display: flex;
 	font-family: "kepler-std";
 	background-color: #faf9f6;
-	padding: 4vw 0 4vw 0;
-	max-width: 1943px;
-	margin: auto;
+	padding: 3vh 4vw;
+	margin-left: -4vw;
+	box-sizing: border-box;
 	z-index: 1;
+	max-height: 200px;
+	top: 0;
 }
 
 nav {
@@ -40,6 +40,7 @@ nav {
 	display: flex;
 	letter-spacing: 0em;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .shaun {
@@ -53,7 +54,7 @@ nav {
 	display: flex;
 	width: 25vw;
 	min-width: 150px;
-	max-width: 200px;
+	max-width: 280px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -74,7 +75,13 @@ nav {
 }
 
 .contact {
-	font-weight: bold;
+	/* font-weight: bold; */
+	/* font-size: 20px; */
+	background-color: #38383b;
+	border-radius: 10px;
+	color: #faf9f6;
+	padding: calc(5px + 0.1vh) calc(12px + 0.1vw);
+	box-shadow: 0 0 5px #000;
 }
 
 .flex {

@@ -1,0 +1,7 @@
+.contactContainer {
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	padding-top: min(calc(8vw + 50px), 250px);
+}

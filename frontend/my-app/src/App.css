@@ -1,14 +1,32 @@
+colours {
+	color: hsl(240, 3%, 23%); /* Primary color */
+	color: hsl(240, 23%, 23%); /* Secondary color */
+	color: hsl(240, 3%, 53%); /* Tetiary color */
+}
+
+.navigation {
+	background-color: #faf9f6;
+	max-width: 1943px;
+	margin: auto;
+	padding-right: 4vw;
+	padding-left: 4vw;
+}
+
 .main {
 	background-color: #faf9f6;
 	height: 100%;
 	max-width: 1943px;
 	margin: auto;
+	padding-right: 4vw;
+	padding-left: 4vw;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 body {
 	background-color: #faf9f6;
-	margin-right: 4vw;
-	margin-left: 4vw;
 	color: #38383b;
 	font-family: "kepler-std";
 }

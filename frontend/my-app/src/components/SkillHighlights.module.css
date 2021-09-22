@@ -1,0 +1,126 @@
+@media screen and (min-width: 0px) and (max-width: 1943px) {
+	.skillHighlights {
+		font-size: calc(0.3vh + 0.3vw + 1rem);
+	}
+	.skillHighlightItem {
+		width: 25%;
+		padding-bottom: 20%;
+	}
+}
+@media screen and (min-width: 1944px) {
+	.skillHighlights {
+		font-size: calc(0.3vh + 0.3vw + 1rem);
+	}
+	.skillHighlightItem {
+		width: 200px;
+		padding-bottom: 200px;
+	}
+}
+
+.skillHighlights {
+	min-width: 350px;
+	font-style: normal;
+	line-height: 1.3;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex: 1;
+	flex-basis: 500px;
+}
+
+.skillHighlightItem {
+	margin: 10px;
+	min-width: 150px;
+	min-height: 150px;
+	border-width: 1px;
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+	height: 0;
+}
+
+.skillHighlightItemContents {
+	position: absolute;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.skillHighlightItemIcon {
+	display: flex;
+	flex: 2;
+	font-size: calc(2vw + 2.4rem);
+}
+
+.skillHighlightItemText {
+	display: flex;
+	flex: 1;
+	margin-top: 1vh;
+	align-items: center;
+	font-weight: bolder;
+	font-size: calc(0.8vw + 0.7rem);
+}
+
+.skillHighlightItemContents:hover .html5 {
+	color: #e34c26;
+	filter: drop-shadow(0px 0 2px #e34c26);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .skillHighlightItemText {
+	font-size: calc((0.8vw + 0.7rem) * 1.2);
+}
+
+.skillHighlightItemContents:hover .css {
+	color: #2965f1;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .js {
+	color: #f0db4f;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .django {
+	color: #092e20aa;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .python {
+	color: #4584b6;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .react {
+	color: #61dbfb;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .github {
+	color: #333;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .vsCode {
+	color: #0078d7;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}
+
+.skillHighlightItemContents:hover .mySQL {
+	color: #00758f;
+	filter: drop-shadow(0px 0 2px #000);
+	-webkit-filter: drop-shadow(1px 2px 1px #38383b);
+}

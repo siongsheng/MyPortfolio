@@ -1,0 +1,10 @@
+.contactNameListContainer {
+	width: 50%;
+	min-width: 350px;
+	border-width: 1px;
+	border-style: solid;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

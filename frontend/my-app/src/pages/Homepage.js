@@ -1,13 +1,13 @@
-import ShortDescription from "../components/ShortDescription";
-import EmploymentHistory from "../components/EmploymentHistory";
+import React from "react";
 
-function Homepage() {
+import MainHighlight from "../components/MainHighlight";
+import Projects from "./Projects";
+
+function Homepage(props) {
 	return (
 		<>
-			<ShortDescription />
-			<EmploymentHistory ID={1} />
-			<EmploymentHistory ID={2} />
-			<EmploymentHistory ID={3} />
+			<MainHighlight />
+			<Projects />
 		</>
 	);
 }
