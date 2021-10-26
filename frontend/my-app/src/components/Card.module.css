@@ -1,8 +1,9 @@
 .cardContainer {
-	background-color: rgb(128, 128, 128, 0.1);
+	background-color: hsl(240, 3%, 53%);
 	border-radius: 20px;
-	min-height: 5vh;
-	min-width: 5vw;
-	padding: 20px;
-	box-shadow: 2px 2px 3px 2px grey;
+	min-height: clamp(300px, 20vw, 600px);
+	width: clamp(300px, 20vw, 600px);
+	/* padding: 20px; */
+	box-shadow: 0 0 5px 0px #000;
+	margin: 20px;
 }

@@ -19,7 +19,6 @@
 	height: 500px;
 	max-width: 500px;
 	min-width: 350px;
-	border-radius: 15px;
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
@@ -67,7 +66,7 @@
 	margin: 20px 0 0 0;
 	display: inline-block;
 	border-width: 0px;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-sizing: border-box;
 	resize: none;
 	font-family: "kepler-std";
@@ -80,7 +79,7 @@
 	width: 100%;
 	padding: 12px 20px;
 	margin: 0;
-	border-radius: 10px;
+	border-radius: 20px;
 	border-width: 0;
 	box-sizing: border-box;
 	background-color: #38383b;

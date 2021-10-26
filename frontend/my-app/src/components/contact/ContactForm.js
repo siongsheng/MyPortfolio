@@ -1,18 +1,19 @@
 import React, { useState, useRef } from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import axios from "axios";
 
 import classes from "./ContactForm.module.css";
+import Subheader from "../Subheader";
 
-function ContactForm() {
+function ContactForm(props) {
 	const formInputsInit = {
-		firstName: "",
-		lastName: "",
+		first_name: "",
+		last_name: "",
 		email: "",
 		message: "",
 	};
+
 	const [form, setForm] = useState(formInputsInit);
-	// const [showInputFields, setshowInputFields] = useState(true);
-	const inputRef = useRef(null);
 
 	const onChangeInput = (e) => {
 		setForm((form) => {
@@ -21,32 +22,48 @@ function ContactForm() {
 	};
 
 	const submitForm = (e) => {
+		console.log("submit!");
 		e.preventDefault();
 		console.log(form);
-		// setshowInputFields(false);
 		// Submit to API
-		setForm(formInputsInit);
+		axios
+			.post(
+				`http://127.0.0.1:8000/api/contact`,
+				JSON.parse(JSON.stringify(form))
+			)
+			.then((res) => {
+				console.log(res);
+				console.log(res.data);
+				setForm(formInputsInit);
+				props.setShowThankYou(true);
+			})
+			.catch((e) => {
+				console.log(e);
+			});
 	};
 
 	return (
 		<div className={classes.contactFormContainer}>
-			<h1>Let's Start a Conversation!</h1>
+			<Subheader
+				mainText="Let's Start a Conversation!"
+				subText="A start of something new"
+			/>
 			<form onSubmit={submitForm} className={classes.contactForm}>
 				<input
-					id="firstName"
+					id="first_name"
 					type="text"
-					ref={inputRef}
+					// ref={inputRef}
 					className={classes.firstName}
-					value={form.firstName}
+					value={form.first_name}
 					onChange={onChangeInput}
 					placeholder="First Name"
 					required
 				/>
 				<input
-					id="lastName"
+					id="last_name"
 					type="text"
 					className={classes.lastName}
-					value={form.lastName}
+					value={form.last_name}
 					onChange={onChangeInput}
 					placeholder="Last Name"
 				/>

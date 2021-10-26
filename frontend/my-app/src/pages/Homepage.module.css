@@ -16,7 +16,7 @@
 }
 
 .mainHighlightsContainer {
-	min-height: calc(1080px);
+	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -27,9 +27,9 @@
 	min-width: 350px;
 	flex: 1;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	padding: 0 5%;
-	flex-basis: 500px;
+	flex-basis: 300px;
 }
 
 .shortDescription {
@@ -43,16 +43,6 @@
 	text-justify: inter-word;
 	width: 100%;
 	font-size: calc(0.4vh + +0.6vw + 1rem);
-}
-
-.avatarPlaceholder {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: calc(3vh + 1vw + 10rem);
-	border-width: 1px;
-	border-style: solid;
-	margin: 10vh 40% 30px 40%;
 }
 
 .sectionContainer {

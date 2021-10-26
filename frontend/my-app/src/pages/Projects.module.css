@@ -1,3 +1,67 @@
 .projectsContainer {
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projectCardContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-height: inherit;
+	border-radius: inherit;
+}
+
+.projectCardContainer:hover .projectCardTextDescription {
+	display: block;
+}
+
+.projectCardTextContainer {
+	background-color: white;
+	border-radius: inherit;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	padding: 5%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.projectCardTextContainer > *:not(:first-child) {
+	margin-top: 15px;
+}
+
+.projectCardTextHeader {
+	font-weight: bold;
+}
+
+.projectCardTextDescription {
+	display: none;
+}
+
+.projectCardTextSkillsContainer {
+	display: flex;
+}
+
+.projectCardTextSkillsItem {
+	background-color: #faf9f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 15px;
+	border-radius: 20px;
+	box-shadow: 0 2px 3px 1px hsla(240, 3%, 53%, 0.5);
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }

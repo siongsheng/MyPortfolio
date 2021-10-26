@@ -11,7 +11,7 @@ function MainNavigation(props) {
 		<header className={classes.header}>
 			<nav>
 				<Link className={classes.shaun} to="/">
-					{"{ Shaun Siong }"}
+					<div className={classes.shaunNameWrapper}>SHAUN</div> SIONG
 				</Link>
 				<Media
 					queries={{
@@ -39,21 +39,28 @@ function MainNavigation(props) {
 									<Link
 										className={classes.navLink}
 										to="/#"
-										onClick={() => props.setScrollToProjects(true)}
+										onClick={() => {
+											props.setScrollToProjects(true);
+											props.setMenuClickCount((i) => i + 1);
+										}}
 									>
 										<FaHammer className={classes.contactFont} />
 									</Link>
 									<Link
 										className={classes.navLink}
 										to="/#"
-										onClick={() => props.setScrollToProjects(false)}
+										onClick={() => {
+											props.setScrollToProjects(false);
+										}}
 									>
 										<FaLinkedin className={classes.contactFont} />
 									</Link>
 									<Link
 										className={classes.navLink}
 										to="/#"
-										onClick={() => props.setScrollToProjects(false)}
+										onClick={() => {
+											props.setScrollToProjects(false);
+										}}
 									>
 										<FaGithub className={classes.contactFont} />
 									</Link>
@@ -66,7 +73,9 @@ function MainNavigation(props) {
 											classes.contactFont
 										}
 										to="/contact"
-										onClick={() => props.setScrollToProjects(false)}
+										onClick={() => {
+											props.setScrollToProjects(false);
+										}}
 									>
 										Contact
 									</Link>

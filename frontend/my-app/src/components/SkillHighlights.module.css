@@ -2,19 +2,19 @@
 	.skillHighlights {
 		font-size: calc(0.3vh + 0.3vw + 1rem);
 	}
-	.skillHighlightItem {
+	/* .skillHighlightItem {
 		width: 25%;
 		padding-bottom: 20%;
-	}
+	} */
 }
 @media screen and (min-width: 1944px) {
 	.skillHighlights {
 		font-size: calc(0.3vh + 0.3vw + 1rem);
 	}
-	.skillHighlightItem {
+	/* .skillHighlightItem {
 		width: 200px;
 		padding-bottom: 200px;
-	}
+	} */
 }
 
 .skillHighlights {
@@ -40,6 +40,8 @@
 	display: flex;
 	position: relative;
 	height: 0;
+	width: 25%;
+	padding-bottom: 20%;
 }
 
 .skillHighlightItemContents {

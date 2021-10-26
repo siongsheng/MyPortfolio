@@ -3,14 +3,11 @@ import React from "react";
 function ModalBackground(props) {
 	const css = {
 		position: "absolute",
-		top: "0",
-		left: "0",
-		width: "100vw",
-		height: "100vh",
+		width: "100%",
+		height: document.documentElement.scrollHeight,
 		backgroundColor: "#000",
 		zIndex: 99,
 		opacity: 0,
-		boxSizing: "border-box",
 	};
 
 	const closeModal = () => {

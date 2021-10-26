@@ -11,25 +11,50 @@ function SideNavigationBar(props) {
 
 	return (
 		<div className={classes.sidebarContainer}>
-			<Link to="/projects" onClick={() => closeSidebar()}>
+			<Link
+				to="/#"
+				onClick={() => {
+					closeSidebar();
+					props.setScrollToProjects(true);
+					props.setMenuClickCount((i) => i + 1);
+				}}
+			>
 				<div className={classes.sidebarItem}>
 					<div className={classes.sidebarItemText}>Projects</div>
 					<FaHammer className={classes.sidebarItemText} />
 				</div>
 			</Link>
-			<Link to="/#" onClick={() => closeSidebar()}>
+			<Link
+				to="/#"
+				onClick={() => {
+					closeSidebar();
+					props.setScrollToProjects(false);
+				}}
+			>
 				<div className={classes.sidebarItem}>
 					<div className={classes.sidebarItemText}>LinkedIn</div>
 					<FaLinkedin className={classes.sidebarItemText} />
 				</div>
 			</Link>
-			<Link to="/#" onClick={() => closeSidebar()}>
+			<Link
+				to="/#"
+				onClick={() => {
+					closeSidebar();
+					props.setScrollToProjects(false);
+				}}
+			>
 				<div className={classes.sidebarItem}>
 					<div className={classes.sidebarItemText}>Github</div>
 					<FaGithub className={classes.sidebarItemText} />
 				</div>
 			</Link>
-			<Link to="/contact" onClick={() => closeSidebar()}>
+			<Link
+				to="/contact"
+				onClick={() => {
+					closeSidebar();
+					props.setScrollToProjects(false);
+				}}
+			>
 				<div className={classes.sidebarItem}>
 					<div className={classes.sidebarItemText}>Contact Me</div>
 					<MdMail className={classes.sidebarItemText} />

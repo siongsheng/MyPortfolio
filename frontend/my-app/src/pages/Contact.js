@@ -5,12 +5,15 @@ import ContactNameList from "../components/contact/ContactNameList";
 import classes from "./Contact.module.css";
 
 function Contact() {
-	const [showAnimation, setShowAnimation] = useState(false);
+	const [showThankYou, setShowThankYou] = useState(false);
 
 	return (
 		<div className={classes.contactContainer}>
-			{showAnimation && <ContactNameList />}
-			<ContactForm />
+			{showThankYou ? (
+				<ContactNameList />
+			) : (
+				<ContactForm setShowThankYou={setShowThankYou} />
+			)}
 		</div>
 	);
 }

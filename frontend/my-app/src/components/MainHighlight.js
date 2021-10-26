@@ -1,12 +1,10 @@
-import ShortDescription from "./ShortDescription";
 import classes from "../pages/Homepage.module.css";
-import SkillHighlights from "./SkillHighlights";
+import MyAvatar from "./MyAvatar";
 
 function MainHighlight() {
 	return (
 		<section className={classes.mainHighlightsContainer}>
-			<ShortDescription />
-			<SkillHighlights />
+			<MyAvatar />
 		</section>
 	);
 }

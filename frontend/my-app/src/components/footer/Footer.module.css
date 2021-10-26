@@ -2,15 +2,22 @@
 	.footerMainText {
 		font-size: calc((2.8 - 1) * 1.2vw + 1rem);
 	}
+	.footerLogoFont {
+		font-size: calc((0.6vw) + 1rem);
+	}
 }
 @media screen and (min-width: 1944px) {
 	.footerMainText {
 		font-size: calc((2 - 1) * 1.2vw + 1rem);
 	}
+	.footerLogoFont {
+		font-size: calc((0.2vw) + 1.3rem);
+	}
 }
 
 .footerContainer {
 	min-height: calc(15vh + 15vw);
+	margin-top: 5vh;
 	background-color: #38383b;
 	/* margin-right: -4vw;
 	margin-left: -4vw; */
@@ -27,7 +34,7 @@
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .footerMainSubText {

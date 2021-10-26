@@ -1,0 +1,104 @@
+.ProjectDetailContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: inherit;
+}
+
+.ProjectDetailHeaderContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.ProjectDetailHeaderImg {
+	height: clamp(300px, calc(8vh + 8vw + 7rem), 400px);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.ProjectDetailToolsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.ProjectDetailAboutContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.ProjectDetailSubheader {
+	font-weight: bold;
+	font-size: calc(((1vw + 1vh) + 1rem) * 0.618);
+	margin-top: 5vh;
+}
+
+.ProjectDetailSubSubheaderContainer {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	margin-top: 2vh;
+}
+
+.ProjectDetailSubSubheader {
+	font-weight: bold;
+	font-size: calc(((1vw + 1vh) + 1rem) * 0.618);
+}
+
+.ProjectDetailSubSubHighlights {
+	display: flex;
+	height: clamp(50px, 5vh, 100px);
+	align-items: center;
+}
+
+.ProjectDetailSubSubHighlightItem {
+	background-color: #38383b;
+	color: #faf9f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 15px;
+	border-radius: 20px;
+	box-shadow: 0 2px 3px 1px hsla(240, 3%, 53%, 0.5);
+	margin-right: 10px;
+	font-size: clamp(10px, calc(((1vw + 1vh) + 1rem) * 0.618), 20px);
+}
+
+.ProjectDetail_ProjectDetailAboutSubheader {
+	display: flex;
+	font-weight: bold;
+	font-size: calc(((1vw + 1vh) + 1rem) * 0.618);
+	margin-top: 5vh;
+}
+
+.ProjectDetail_ProjectDetailAboutItemText {
+	font-size: calc(((1vw + 1vh) + 1rem) * 0.618);
+	margin-top: 2vh;
+	white-space: pre-wrap;
+}
+
+.ProjectDetail_ProjectDetailAboutQuoteContainer {
+	padding: 10vh min(8vw, 200px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ProjectDetail_ProjectDetailAboutQuote {
+	font-size: calc(((1vw + 1vh) + 1rem));
+	margin-top: 2vh;
+	font-style: italic;
+	text-align: center;
+}
+
+.ProjectDetail_ProjectDetailAboutQuoteAuthor {
+	text-align: center;
+	padding: 4vh 2vh;
+	font-size: calc(((1vw + 1vh) + 1rem) * 0.618);
+}

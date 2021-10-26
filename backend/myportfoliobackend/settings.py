@@ -43,9 +43,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'contact',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -136,3 +138,12 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = from_email
 EMAIL_HOST_PASSWORD = email_pass
 EMAIL_PORT = 587
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    'http://localhost:3000',
+]

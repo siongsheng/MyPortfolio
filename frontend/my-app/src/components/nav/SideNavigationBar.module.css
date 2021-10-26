@@ -1,7 +1,7 @@
 .sidebarContainer {
 	position: fixed;
 	right: 4vw;
-	top: calc(6vh);
+	top: calc(8vh);
 	margin: 0;
 	min-height: 100px;
 	width: 250px;

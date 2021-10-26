@@ -5,18 +5,20 @@ import "./App.css";
 import Homepage from "./pages/Homepage";
 import MainNavigation from "./components/nav/MainNavigation";
 import Footer from "./components/footer/Footer";
-import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ModalBackground from "./components/nav/ModalBackground";
 import SideNavigationBar from "./components/nav/SideNavigationBar";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
 	const [isOpenSideMenu, setIsOpenSideMenu] = useState(true);
 	const [isScrollProjectSection, setIsScrollProjectSection] = useState(false);
+	const [menuClickCount, setMenuClickCount] = useState(0);
 
 	const scrollToProjects = () => {
-		const anchor = document.querySelector("#projects");
-		anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+		const anchor = document.getElementById("projects");
+		const y = anchor.getBoundingClientRect().top;
+		window.scrollTo({ top: y, behavior: "smooth", block: "center" });
 	};
 
 	useEffect(() => {
@@ -25,13 +27,17 @@ function App() {
 		} else {
 			window.scrollTo({ top: 0, behavior: "smooth" });
 		}
-	}, [isScrollProjectSection]);
+	}, [isScrollProjectSection, menuClickCount]);
 
 	return (
 		<div>
 			{isOpenSideMenu && (
 				<>
-					<SideNavigationBar close={setIsOpenSideMenu} />
+					<SideNavigationBar
+						close={setIsOpenSideMenu}
+						setScrollToProjects={setIsScrollProjectSection}
+						setMenuClickCount={setMenuClickCount}
+					/>
 					<ModalBackground close={setIsOpenSideMenu} />
 				</>
 			)}
@@ -40,15 +46,20 @@ function App() {
 					IsOpenSideMenu={isOpenSideMenu}
 					setIsOpenSideMenu={setIsOpenSideMenu}
 					setScrollToProjects={setIsScrollProjectSection}
+					setMenuClickCount={setMenuClickCount}
 				/>
 			</div>
 			<main className="main">
 				<Switch>
 					<Route exact path="/">
-						<Homepage scrollToProjects={isScrollProjectSection} />
+						<Homepage
+							scrollToProjects={isScrollProjectSection}
+							setScrollToProjects={setIsScrollProjectSection}
+							setMenuClickCount={setMenuClickCount}
+						/>
 					</Route>
-					<Route exact path="/#projects">
-						<Projects />
+					<Route exact path="/projectDetail/:projectName">
+						<ProjectDetail />
 					</Route>
 					<Route exact path="/contact">
 						<Contact />

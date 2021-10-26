@@ -10,10 +10,14 @@ import { SiDjango, SiVisualstudiocode } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import classes from "./SkillHighlights.module.css";
 import SkillItem from "./SkillItem";
+import Subheader from "./Subheader";
 
 function SkillHighlights() {
+	const mainSubheaderText = "My Skills";
+	const subSubheaderText = "Tools that make dreams a reality";
 	return (
 		<div className={classes.skillHighlights}>
+			<Subheader mainText={mainSubheaderText} subText={subSubheaderText} />
 			<SkillItem text={"HTML5"}>
 				<FaHtml5
 					className={`${classes.skillHighlightItemIcon} ${classes.html5}`}

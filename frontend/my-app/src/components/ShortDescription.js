@@ -1,26 +1,19 @@
+import React from "react";
 import classes from "../pages/Homepage.module.css";
-// import ReactTypingEffect from "react-typing-effect";
 
 function ShortDescription() {
 	return (
 		<div className={classes.shortDescriptionContainer}>
-			<div className={classes.avatarPlaceholder}>Avatar</div>
 			<div className={classes.shortDescription}>
-				I’m an
-				{
-					" Software Engineer "
-					/* <ReactTypingEffect
-						text={["Software Engineer", "Sports Enthusiast"]}
-						speed={100}
-						eraseSpeed={100}
-						eraseDelay={3000}
-					/> */
-				}
-				who is passionate about helping designers and developers ship their very
-				best work. I lead projects from initial briefing to launch day and
-				beyond, with direct responsibility for day-to-day management of process
-				and workflow. I’ve overseen dot coms, digital experiences and a home
-				screen’s worth of apps and I’d love to work with you.
+				I’m an full-stack software engineer who is passionate about leveraging
+				on IT to build solutions for real-world issues. I graduated in 2019 from
+				the School of Computing, National University of Singapore (NUS). Other
+				than my interest in software engineering, I am quite a fitness
+				enthusiast and am also into finance/wealth creation. In my spare time, I
+				will usually be deepening my knowledge in either of my passions or
+				thinking and implementing ways to integrate my passions together, mainly
+				finance and IT. Do drop me a message in the contact page and I’d love to
+				work with you.
 			</div>
 		</div>
 	);

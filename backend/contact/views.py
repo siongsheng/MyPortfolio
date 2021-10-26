@@ -20,7 +20,7 @@ class ContactViewSet(viewsets.GenericViewSet, mixins.CreateModelMixin, mixins.Li
             message = serializer.validated_data["message"]
             send_mail(
                 subject=(f'{first_name} {last_name} has sent you a message through your portfolio website!'),
-                message=message + email,
+                message=f"{message}\n\nEmail: " + email,
                 from_email=settings.EMAIL_HOST_USER,
                 recipient_list=[my_email],
                 fail_silently=False

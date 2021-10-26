@@ -20,22 +20,22 @@ function Footer() {
 				</div>
 				<div className={classes.footerIcons}>
 					<Link className={classes.footerIcons} to="/contact">
-						<MdMail size={31} />
+						<MdMail className={classes.footerLogoFont} />
 					</Link>
 					<Link className={classes.footerIcons} to="/projects">
-						<FaHammer size={27} />
+						<FaHammer className={classes.footerLogoFont} />
 					</Link>
 					<Link className={classes.footerIcons} to="/#">
-						<FaLinkedin size={27} />
+						<FaLinkedin className={classes.footerLogoFont} />
 					</Link>
 					<Link className={classes.footerIcons} to="/#">
-						<FaGithub size={27} />
+						<FaGithub className={classes.footerLogoFont} />
 					</Link>
 				</div>
 				<div className={classes.footerMainSubText}>
 					{" "}
 					Made with <DiReact size={20} /> <DiCss3 size={20} />{" "}
-					<DiDjango size={20} />
+					<DiDjango className={classes.footerLogoFont} />
 				</div>
 			</div>
 		</div>
