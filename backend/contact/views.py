@@ -5,6 +5,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 import sys
 sys.path.append("..")
+import os
 from credientials import my_email
 
 class ContactViewSet(viewsets.GenericViewSet, mixins.CreateModelMixin, mixins.ListModelMixin):
