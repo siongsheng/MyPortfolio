@@ -9,25 +9,9 @@ function MainHighlight() {
 		return () => window.removeEventListener("scroll", listenScroll);
 	}, []);
 
-	// let opacity = 1;
 	const fadeDistance = 200;
 
 	const listenScroll = () => {
-		// let heightToHideFrom = document
-		// 	.getElementById("shortDescription")
-		// 	.getBoundingClientRect().top;
-		// const winScroll =
-		// 	document.body.scrollTop || document.documentElement.scrollTop;
-		// if (winScroll > heightToHideFrom) {
-		// 	if (heightToHideFrom + fadeDistance < winScroll) {
-		// 		opacity = 0;
-		// 	} else {
-		// 		opacity =
-		// 			1 - ((winScroll - heightToHideFrom) / fadeDistance).toFixed(1);
-		// 	}
-		// } else {
-		// 	opacity = 1;
-		// }
 		if (window.scrollY > fadeDistance) {
 			setVisibility("hidden");
 		} else {
