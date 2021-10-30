@@ -28,7 +28,7 @@ function ContactForm(props) {
 		// Submit to API
 		axios
 			.post(
-				`http://127.0.0.1:8000/api/contact`,
+				`https://shaun-siong-backend.herokuapp.com/api/contact`,
 				JSON.parse(JSON.stringify(form))
 			)
 			.then((res) => {
