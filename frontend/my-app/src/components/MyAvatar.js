@@ -100,7 +100,7 @@ function MyAvatar() {
 								"keen to work with you :)",
 							]}
 							cursor
-							speed={200}
+							speed={100}
 							eraseSpeed={100}
 							eraseDelay={1500}
 							typingDelay={1000}

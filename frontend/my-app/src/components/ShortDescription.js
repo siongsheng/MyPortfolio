@@ -3,7 +3,7 @@ import classes from "../pages/Homepage.module.css";
 
 function ShortDescription() {
 	return (
-		<div className={classes.shortDescriptionContainer}>
+		<div id="shortDescription" className={classes.shortDescriptionContainer}>
 			<div className={classes.shortDescription}>
 				I’m an full-stack software engineer who is passionate about leveraging
 				on IT to build solutions for real-world issues. I graduated in 2019 from

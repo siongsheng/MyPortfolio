@@ -65,13 +65,7 @@ function MainNavigation(props) {
 										<FaGithub className={classes.contactFont} />
 									</Link>
 									<Link
-										className={
-											classes.navLink +
-											" " +
-											classes.contact +
-											" " +
-											classes.contactFont
-										}
+										className={classes.contact + " " + classes.contactFont}
 										to="/contact"
 										onClick={() => {
 											props.setScrollToProjects(false);
