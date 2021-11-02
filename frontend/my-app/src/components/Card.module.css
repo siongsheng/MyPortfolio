@@ -1,9 +1,17 @@
 .cardContainer {
-	background-color: hsl(240, 3%, 53%);
+	background-color: hsl(240, 3%, 23%); /*hsl(240, 3%, 53%);*/
 	border-radius: 20px;
-	min-height: clamp(300px, 20vw, 600px);
-	width: clamp(300px, 20vw, 600px);
+	min-height: clamp(300px, 30vw, 600px);
+	width: clamp(300px, 30vw, 600px);
 	/* padding: 20px; */
 	box-shadow: 0 0 5px 0px #000;
 	margin: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.cardContainer img {
+	position: absolute;
+	max-width: 100%;
+	z-index: 1;
 }

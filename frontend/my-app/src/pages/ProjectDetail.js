@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 import Subheader from "../components/Subheader";
 import classes from "./ProjectDetail.module.css";
+import { motion } from "framer-motion";
 
 function ProjectDetail() {
 	let { projectName } = useParams();
@@ -9,6 +10,7 @@ function ProjectDetail() {
 		"portfolio website": {
 			Subtext:
 				"This is the website you are looking at :) My first official portfolio website!",
+			Image: "/MyPortfolio_Avatar.gif",
 			Languages: ["Javascript", "Python", "HTML5", "CSS"],
 			Frameworks: ["React", "Django"],
 			Platforms: ["VSCode", "Git"],
@@ -22,8 +24,9 @@ function ProjectDetail() {
 				"Improving by just 1 percent isn't notable. But it can be just as meaningful, especially in the long run.",
 			Author: "James Clear",
 		},
-		"options bot": {
+		"options trading bot": {
 			Subtext: "A program that manages my options portfolio!",
+			Image: "/Options_Trading_Bot.png",
 			Languages: ["Python"],
 			Frameworks: [],
 			Platforms: ["TD Ameritrade For Developer", "Telegram APIs"],
@@ -44,7 +47,28 @@ function ProjectDetail() {
 		<div className={classes.ProjectDetailContainer}>
 			<Subheader mainText={projectName} subText={project.Subtext} />
 			<div className={classes.ProjectDetailHeaderContainer}>
-				<div className={classes.ProjectDetailHeaderImg}>[Image]</div>
+				<div className={classes.ProjectDetailHeaderImg}>
+					<motion.img
+						src={project.Image}
+						animate={{
+							scale: [1, 1.05, 1],
+						}}
+						transition={{ duration: 3, repeat: Infinity }}
+						drag
+						dragConstraints={{
+							top: -0,
+							left: -0,
+							right: 0,
+							bottom: 0,
+						}}
+						style={{
+							boxShadow:
+								projectName.toLowerCase() === "portfolio website"
+									? "0 2px 10px 5px hsl(240deg 3% 53% / 50%)"
+									: "",
+						}}
+					/>
+				</div>
 			</div>
 			<div className={classes.ProjectDetailSubheader}>TECHNOLOGY</div>
 			<div className={classes.ProjectDetailToolsContainer}>

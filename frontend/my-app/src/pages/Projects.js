@@ -18,35 +18,16 @@ function Projects(props) {
 			skills: ["Django", "React", "MySQL"],
 			description:
 				"This is the website you are looking at :) My first official portfolio website!",
+			image: "/MyPortfolio_Avatar.gif",
 		},
 		{
-			header: "Options Bot",
+			header: "Options Trading Bot",
 			tags: ["2020", "Personal", "1 Month"],
 			skills: ["Python"],
 			description:
 				"A program that looks for and executes high ROI option trades and manages existing option trades.",
+			image: "/Options_Trading_Bot.png",
 		},
-		// {
-		// 	header: "Header3",
-		// 	tags: ["tag1", "tag2", "tag3"],
-		// 	skills: ["skills1", "skills2", "skills3"],
-		// 	description:
-		// 		"This is a short description of the project that is supposed to be about two lines.",
-		// },
-		// {
-		// 	header: "Header4",
-		// 	tags: ["tag1", "tag2", "tag3"],
-		// 	skills: ["skills1", "skills2", "skills3"],
-		// 	description:
-		// 		"This is a short description of the project that is supposed to be about two lines.",
-		// },
-		// {
-		// 	header: "Header5",
-		// 	tags: ["tag1", "tag2", "tag3"],
-		// 	skills: ["skills1", "skills2", "skills3"],
-		// 	description:
-		// 		"This is a short description of the project that is supposed to be about two lines.",
-		// },
 	];
 
 	const skillColour = {
@@ -75,7 +56,7 @@ function Projects(props) {
 							}}
 							key={p.header}
 						>
-							<Card key={p.header}>
+							<Card key={p.header} image={p.image}>
 								<div
 									className={classes.projectCardContainer}
 									onMouseEnter={() => setIsSkillMouseOver(i)}
