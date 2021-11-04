@@ -17,7 +17,8 @@ function App() {
 
 	const scrollToProjects = () => {
 		const anchor = document.getElementById("projects");
-		const y = anchor.getBoundingClientRect().top;
+		const winY = window.scrollY;
+		const y = winY + anchor.getBoundingClientRect().top;
 		window.scrollTo({ top: y, behavior: "smooth", block: "center" });
 	};
 

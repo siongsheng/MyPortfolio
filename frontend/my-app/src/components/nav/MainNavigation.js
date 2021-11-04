@@ -40,7 +40,7 @@ function MainNavigation(props) {
 										className={classes.navLink}
 										to="/#"
 										onClick={() => {
-											props.setScrollToProjects(true);
+											props.setScrollToProjects((s) => !s);
 											props.setMenuClickCount((i) => i + 1);
 										}}
 									>
@@ -48,19 +48,21 @@ function MainNavigation(props) {
 									</Link>
 									<Link
 										className={classes.navLink}
-										to="/#"
+										to={{ pathname: "https://www.linkedin.com/in/shaunsiong/" }}
 										onClick={() => {
 											props.setScrollToProjects(false);
 										}}
+										target="_blank"
 									>
 										<FaLinkedin className={classes.contactFont} />
 									</Link>
 									<Link
 										className={classes.navLink}
-										to="/#"
+										to={{ pathname: "https://github.com/siongsheng" }}
 										onClick={() => {
 											props.setScrollToProjects(false);
 										}}
+										target="_blank"
 									>
 										<FaGithub className={classes.contactFont} />
 									</Link>
